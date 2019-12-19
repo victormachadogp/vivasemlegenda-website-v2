@@ -4,6 +4,8 @@
     <Hero />
     <BannerPrincipal />
     <CursosSection />
+    <ActionCall />
+    <Contact />
     <Footer />
   </div>
 </template>
@@ -13,6 +15,8 @@ import NavBar from '@/components/NavBar.vue';
 import Hero from "@/components/Hero.vue";
 import BannerPrincipal from "@/components/BannerPrincipal.vue";
 import CursosSection from "@/components/CursosSection.vue";
+import ActionCall from '@/components/ActionCall.vue';
+import Contact from '@/components/Contact.vue';
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -21,6 +25,8 @@ export default {
     Hero,
     BannerPrincipal,
     CursosSection,
+    ActionCall,
+    Contact,
     Footer
   }
 };

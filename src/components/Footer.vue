@@ -31,7 +31,7 @@ export default {};
   color: #ffffff;
   min-height: 120px;
   align-content: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .logo {
   max-width: 225px;
@@ -79,6 +79,7 @@ export default {};
   }
   .logo-wrapper {
     order: -1;
+    padding-top: 0 !important;
   }
 }
 

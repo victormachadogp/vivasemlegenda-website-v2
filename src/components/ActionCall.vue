@@ -68,6 +68,17 @@ h4 {
     padding-right: 0px;
 }
 
+h4 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.paragraph {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
 
 
 }

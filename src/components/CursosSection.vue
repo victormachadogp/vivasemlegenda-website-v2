@@ -5,7 +5,7 @@
             <div class="cursos-box box-1">
                 <img class="image-box" src="assets/desktop-man.svg">
                 <h3>Aulas Online</h3>
-                <p>As aulas on-line acontecem por
+                <p class="box-text">As aulas on-line acontecem por
                 meio da plataforma Zoom. Após o
                 cadastro gratuito que o aluno fará
                 com o nosso auxilio.
@@ -14,7 +14,7 @@
             <div class="cursos-box box-2">
                 <img class="image-box" src="assets/deal.svg">
                 <h3>Aulas para Empresas</h3>
-                <p>As aulas on-line acontecem por
+                <p class="box-text">As aulas on-line acontecem por
                 meio da plataforma Zoom. Após o
                 cadastro gratuito que o aluno fará
                 com o nosso auxilio.
@@ -23,7 +23,7 @@
             <div class="cursos-box box-3">
                 <img class="image-box" src="assets/man-computer.svg">
                 <h3>Outros</h3>
-                <p>As aulas on-line acontecem por
+                <p class="box-text">As aulas on-line acontecem por
                 meio da plataforma Zoom. Após o
                 cadastro gratuito que o aluno fará
                 com o nosso auxilio.
@@ -48,24 +48,64 @@
 
 h2 {
     width: 100%;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 2.7rem;
 }
 
 .grid-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 3%;
 }
 
 .image-box {
-    width: 50%;
+    width: 80%;
+    height:  24vh;
+}
+
+h3 {
+    text-align: center;
+    padding-top:  5%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
 }
 
 .cursos-box {
     background-color: white;
     margin: 10%;
     padding: 7%;
-    border-radius: 7%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    border-radius: 4%;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+
+.box-text {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 850px) {
+
+    .grid-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 3%;
+}
+
+.cursos-box {
+    margin: 5%;
+    padding: 7%;
+    border-radius: 4%;
+    padding-top: 7%;
+    padding-bottom: 12%;
+}
+
+h2 {
+    padding-top: 5%;
+}
+
 }
 
 

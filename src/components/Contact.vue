@@ -6,7 +6,9 @@
                 <form class="input-section">
                     <input class="input-area" type="text" placeholder="Nome">
                     <input class="input-area" type="text" placeholder="Email">
-                    <input class="input-area grow" type="text" placeholder="Digite sua mensagem aqui...">
+                    <textarea class="input-area grow">
+                        Digite sua mensagem aqui...
+                    </textarea>
                 </form>
             </div>
             <div class="image-input">
@@ -28,6 +30,12 @@
 
 .background {
     background-color: lightgray;
+}
+
+h2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 2.7rem;
 }
 
 .grid-box {
@@ -66,6 +74,19 @@
     border-radius: 5px;
     border: 2px solid #0095F5;
 
+}
+
+@media (max-width: 800px) {
+
+    .grid-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+    .contact-image {
+        display: none;
+    }
 }
 
 </style>

@@ -1,12 +1,14 @@
 <template>
   <div class="hero">
-    <section class="container">
-        <img class="image-cover" src="assets/path-hero.svg" />
-        <div class="grid">
-          <img class="logo" src="assets/logo-original.svg" />
-          <h1>A MELHOR ESCOLHA PARA AS MELHORES PESSOAS!</h1>
+    <div class="container">
+      <div class="logo-container">
+        <img class="logo" src="assets/logo-original.svg" />
       </div>
-    </section>
+      <div class="content">
+        <h1>A MELHOR ESCOLHA PARA AS MELHORES PESSOAS!</h1>
+      </div>
+    </div>
+    <!-- <img class="image-cover" src="assets/path-hero.svg" /> -->
   </div>
 </template>
 
@@ -16,43 +18,44 @@ export default {};
 
 <style scoped>
 /* Hero Before Flexbox */
- .container {
-  width: 100%;
+.hero {
   position: relative;
-  text-align: center;
-}
+  /* background-color: aquamarine; */
+  display: flex;
+  height: 80vh;
 
-.image-cover {
-  width: 100%;
-  pointer-events: none;
-  
+  /* Background */
+  background-image: url('/assets/path-hero.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: absolute;
-  top: 37%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 100;
-  width: 100%;
-}
-h1 {
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-self: center;
-  justify-self: center;
-  width: 70%;
-  color: white;
-  font-size: 3vw;
-  font-weight: 100;
+}
+.logo-container {
+  flex: 50%;
+}
+.content {
+  flex: 50%;
+}
+.logo {
+  width: 70vw;
+  max-width: 20rem;
   animation: slideUp 1s forwards 0s ease;
 }
 
-.logo {
-  width: 60%;
-  align-self: center;
-  justify-self: center;
+/* .image-cover {
+  width: 100%;
+  z-index: -10;
+} */
+
+h1 {
+  color: white;
+  font-size: 3vw;
+  font-weight: 100;
   animation: slideUp 1s forwards 0s ease;
 }
 

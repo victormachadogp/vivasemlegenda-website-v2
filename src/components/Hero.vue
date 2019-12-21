@@ -22,7 +22,7 @@ export default {};
   position: relative;
   /* background-color: aquamarine; */
   display: flex;
-  height: 80vh;
+  height: 100vh;
 
   /* Background */
   background-image: url('/assets/path-hero.svg');

@@ -1,10 +1,10 @@
 <template>
   <div class="hero">
     <section class="container">
-      <img class="image-cover" src="assets/path-hero.svg" />
-      <div class="grid">
-        <img class="logo" src="assets/logo-original.svg" />
-        <h1>A MELHOR ESCOLHA PARA AS MELHORES PESSOAS!</h1>
+        <img class="image-cover" src="assets/path-hero.svg" />
+        <div class="grid">
+          <img class="logo" src="assets/logo-original.svg" />
+          <h1>A MELHOR ESCOLHA PARA AS MELHORES PESSOAS!</h1>
       </div>
     </section>
   </div>
@@ -15,13 +15,8 @@ export default {};
 </script>
 
 <style scoped>
-/* .hero{
-    background: rosybrown;
-    width: 100%;
-    height: 300px;
-} */
-
-.container {
+/* Hero Before Flexbox */
+ .container {
   width: 100%;
   position: relative;
   text-align: center;
@@ -30,7 +25,10 @@ export default {};
 .image-cover {
   width: 100%;
   pointer-events: none;
+  
 }
+
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

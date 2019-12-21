@@ -44,7 +44,6 @@
 
 .cursos-container {
     background-color: #0095F5;
-    margin-bottom: 5%;
 }
 
 h2 {

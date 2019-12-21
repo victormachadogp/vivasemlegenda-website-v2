@@ -65,6 +65,7 @@ h4 {
     text-align: center;
     margin-left: 0px;
     margin: 1%;
+    padding-right: 0px;
 }
 
 

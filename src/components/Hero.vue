@@ -49,10 +49,9 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+
   align-self: center;
-  padding: 0 5rem;
-  margin-top: 5rem;
+  margin: 5rem 5vw 0 5vw;
 }
 #logo {
   position: absolute;
@@ -73,14 +72,16 @@ export default {
   margin: 2rem 0;
 }
 #main-art {
-  width: 70vw;
+  width: 80%;
   max-width: 35rem;
   animation: slideUp 1s forwards 0s ease;
 }
 #circle-sky {
   content: "";
-  width: 70vh;
-  height: 70vh;
+  width: 50vw;
+  height: 50vw;
+  max-width: 550px;
+  max-height: 550px;
   background: #0095f5;
   border-radius: 50%;
   background-image: linear-gradient(to right, #0095f5, #50bafe);
@@ -150,6 +151,17 @@ h1 {
   }
   100% {
     transform: rotate(xx) translateY(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .container {
+    flex-wrap: wrap;
   }
 }
 </style>

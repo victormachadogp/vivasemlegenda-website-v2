@@ -1,38 +1,39 @@
 <template>
   <div>
-    <NavBar />
+    <TheNavBar />
     <Hero />
     <BannerPrincipal />
     <CursosSection />
     <ActionCall />
     <Contact />
-    <Footer />
+    <TheFooter />
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
+import TheNavBar from "@/components/TheNavBar.vue";
 import Hero from "@/components/Hero.vue";
 import BannerPrincipal from "@/components/BannerPrincipal.vue";
 import CursosSection from "@/components/CursosSection.vue";
-import ActionCall from '@/components/ActionCall.vue';
-import Contact from '@/components/Contact.vue';
-import Footer from "@/components/Footer.vue";
+import ActionCall from "@/components/ActionCall.vue";
+import Contact from "@/components/Contact.vue";
+import TheFooter from "@/components/TheFooter.vue";
 
 export default {
   components: {
-    NavBar,
+    TheNavBar,
     Hero,
     BannerPrincipal,
     CursosSection,
     ActionCall,
     Contact,
-    Footer
+    TheFooter
   }
 };
 </script>
 
-<style> /*Retirei o Scoped para poder aplicar em todos os elementos da pagina*/
+<style>
+/*Retirei o Scoped para poder aplicar em todos os elementos da pagina*/
 
 * {
   margin: 0px;

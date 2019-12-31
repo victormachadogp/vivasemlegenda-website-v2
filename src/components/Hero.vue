@@ -49,14 +49,14 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+
   align-self: center;
-  padding: 0 5rem;
-  margin-top: 5rem;
+  margin: 5rem 5vw 0 5vw;
 }
 #logo {
   position: absolute;
-  max-width: 225px;
+  width: 25vw;
+  max-width: 220px;
   margin: 1.5rem;
 }
 .logo-container {
@@ -70,17 +70,23 @@ export default {
   animation: slideUp 1s forwards 0s ease;
 }
 .hero-summary {
+  max-width: 31rem;
   margin: 2rem 0;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
 }
 #main-art {
-  width: 70vw;
+  width: 80%;
   max-width: 35rem;
   animation: slideUp 1s forwards 0s ease;
+  
 }
 #circle-sky {
   content: "";
-  width: 70vh;
-  height: 70vh;
+  width: 50vw;
+  height: 50vw;
+  max-width: 550px;
+  max-height: 550px;
   background: #0095f5;
   border-radius: 50%;
   background-image: linear-gradient(to right, #0095f5, #50bafe);
@@ -89,13 +95,16 @@ export default {
   right: -8rem;
   top: -10rem;
   z-index: -10;
+  /* animation: infinite-grow 3s infinite 0s ease-in-out; */
 }
 
 #circle-left {
   position: absolute;
   content: "";
-  width: 35vh;
-  height: 35vh;
+  width: 35vw;
+  height: 35vw;
+  max-width: 17rem;
+  max-height: 17rem;
   background-image: linear-gradient(to right, #0095f5, #50bafe);
   border-radius: 50%;
   left: -25vh;
@@ -119,6 +128,8 @@ export default {
   position: absolute;
   top: -130px;
   left: 80px;
+
+  animation: infinite-translate-y 3s infinite 0s ease-in-out;
 }
 
 .grow {
@@ -131,7 +142,7 @@ export default {
 .highlight {
   background-color: #fbb03b;
   color: white;
-  padding: 0.25rem;
+  padding: 2px 0.35rem;
 }
 /* .image-cover {
   width: 100%;
@@ -140,7 +151,6 @@ export default {
 
 h1 {
   color: #707070;
-  font-size: 3vw;
   font-weight: 100;
 }
 
@@ -149,7 +159,47 @@ h1 {
     transform: translateY(300px);
   }
   100% {
-    transform: rotate(xx) translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes infinite-grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes infinite-translate-y {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(0) translateY(06px);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .container {
+    flex-wrap: wrap;
+  }
+  #circle-sun {
+    top: 0;
+    right: 0;
+    left: auto;
   }
 }
 </style>

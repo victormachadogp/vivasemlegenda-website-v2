@@ -202,4 +202,15 @@ h1 {
     left: auto;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .container {
+    flex-wrap: wrap;
+  }
+}
 </style>

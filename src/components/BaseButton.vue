@@ -26,7 +26,12 @@ export default {
 }
 button {
   color: #ffffff;
-  background-color: #0095f5 !important;
+  background-image: linear-gradient(
+    to right,
+    #0095f5,
+    #0095f5,
+    #50bafe
+  ) !important;
   border-color: #707070 !important;
   height: 36px;
   min-width: 64px;

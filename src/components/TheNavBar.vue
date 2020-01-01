@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 nav {
-  background-color: #0095f5;
+  background-image: linear-gradient(to right, #0095f5, #0095f5, #50bafe);
   width: 100%;
   display: flex;
   justify-content: space-between;

@@ -73,7 +73,7 @@ export default {
 
 .hero-summary {
   max-width: 31rem;
-  margin: 2rem 0;
+  margin: 1.2rem 0;
   line-height: 1.5rem;
   font-size: 1.2rem;
 }

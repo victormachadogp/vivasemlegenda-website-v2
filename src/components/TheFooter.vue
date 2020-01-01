@@ -24,7 +24,7 @@ export default {};
 
 <style scoped>
 .footer {
-  background-color: #0095f5;
+  background-image: linear-gradient(to right, #0095f5, #0095f5, #50bafe);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

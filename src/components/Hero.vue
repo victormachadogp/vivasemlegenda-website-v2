@@ -4,9 +4,12 @@
     <img id="cloud-circles" src="assets/hero-cloud-circles.svg" />
     <div id="circle-sky"></div>
     <div class="container">
+      <div class="logo-container">
+        <div id="circle-sun" class="grow"></div>
+        <img id="main-art" src="assets/reading.svg" />
+      </div>
       <div class="content">
-        <h1>A MELHOR ESCOLHA PARA</h1>
-        <h1>AS MELHORES PESSOAS!</h1>
+        <h1>A MELHOR ESCOLHA PARA AS MELHORES PESSOAS!</h1>
         <p class="hero-summary">
           Professores particulares, aulas online ou para empresas e
           <span class="highlight">
@@ -16,10 +19,7 @@
         </p>
         <BaseButton>Agende uma aula experiemental</BaseButton>
       </div>
-      <div class="logo-container">
-        <div id="circle-sun" class="grow"></div>
-        <img id="main-art" src="assets/reading.svg" />
-      </div>
+
       <div id="circle-left"></div>
     </div>
     <!-- <img class="image-cover" src="assets/path-hero.svg" /> -->
@@ -64,11 +64,13 @@ export default {
   position: relative;
 }
 .content {
+  padding-left: 7.5vw;
   flex: 50%;
   text-align: left;
   align-self: center;
   animation: slideUp 1s forwards 0s ease;
 }
+
 .hero-summary {
   max-width: 31rem;
   margin: 2rem 0;
@@ -79,7 +81,6 @@ export default {
   width: 80%;
   max-width: 35rem;
   animation: slideUp 1s forwards 0s ease;
-  
 }
 #circle-sky {
   content: "";
@@ -101,8 +102,8 @@ export default {
 #circle-left {
   position: absolute;
   content: "";
-  width: 35vw;
-  height: 35vw;
+  width: 27vw;
+  height: 27vw;
   max-width: 17rem;
   max-height: 17rem;
   background-image: linear-gradient(to right, #0095f5, #50bafe);
@@ -127,7 +128,7 @@ export default {
 
   position: absolute;
   top: -130px;
-  left: 80px;
+  right: 80px;
 
   animation: infinite-translate-y 3s infinite 0s ease-in-out;
 }
@@ -152,6 +153,7 @@ export default {
 h1 {
   color: #707070;
   font-weight: 100;
+  max-width: 28rem;
 }
 
 @keyframes slideUp {

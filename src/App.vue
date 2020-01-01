@@ -5,9 +5,7 @@
 </template>
 
 <style lang="scss">
-
-body{
-
+body {
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

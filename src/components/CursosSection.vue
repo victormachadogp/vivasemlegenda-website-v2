@@ -23,7 +23,7 @@
         </p>
       </div>
       <div class="cursos-box box-3">
-        <img class="image-box" src="assets/man-computer.svg" />
+        <img class="image-box" src="assets/learning.svg" />
         <h3>Outros</h3>
         <p class="box-text">
           As aulas on-line acontecem por

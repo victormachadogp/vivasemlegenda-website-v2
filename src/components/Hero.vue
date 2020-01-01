@@ -94,7 +94,7 @@ export default {
 
   position: absolute;
   right: -8rem;
-  top: -10rem;
+  top: -16rem;
   z-index: -10;
   /* animation: infinite-grow 3s infinite 0s ease-in-out; */
 }

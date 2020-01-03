@@ -79,6 +79,11 @@ h3 {
   border-radius: 4%;
   padding-top: 7%;
   padding-bottom: 10%;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.cursos-box:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .box-text {

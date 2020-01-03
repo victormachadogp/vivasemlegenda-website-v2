@@ -2,7 +2,12 @@
   <div v-show="showNavBar">
     <nav>
       <div class="box">
-        <img class="nav-logo" src="assets/logo-light.svg" />
+        <router-link
+          tag="img"
+          to="/"
+          class="nav-logo"
+          src="assets/logo-light.svg"
+        />
       </div>
       <div class="box-2">
         <div class="nav-link">

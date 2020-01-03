@@ -6,7 +6,13 @@
       <span class="site-tree-element">Matrícula</span>
     </div>
     <div class="logo-wrapper">
-      <img class="logo" src="assets/logo-light.svg" alt />
+      <router-link
+        tag="img"
+        to="/"
+        class="logo"
+        src="assets/logo-light.svg"
+        alt
+      />
     </div>
 
     <div class="contact">
@@ -35,6 +41,7 @@ export default {};
 }
 .logo {
   max-width: 225px;
+  cursor: pointer;
 }
 .contact > .title {
   font-weight: bold;

@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import CursosPage from '@/views/CursosPage.vue';
+import MatriculaPage from '@/views/MatriculaPage.vue';
 
 Vue.use(VueRouter);
 
@@ -11,9 +13,14 @@ const routes = [
     component: Home
   },
   {
+    path: "/cursos",
+    name: "cursos",
+    component: CursosPage
+  },
+  {
     path: "/matricula",
     name: "matricula",
-    component: Home
+    component: MatriculaPage
   },
 
 ];

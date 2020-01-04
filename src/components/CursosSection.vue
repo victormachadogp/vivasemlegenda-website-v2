@@ -66,6 +66,7 @@ h2 {
 }
 
 h3 {
+  font-weight: 500;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;

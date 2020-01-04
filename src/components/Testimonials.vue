@@ -1,36 +1,35 @@
 <template>
   <div class="cursos-container">
-    <h2>CURSOS</h2>
+    <h2>DEPOIMENTOS</h2>
     <div class="grid-box">
       <div class="cursos-box box-1">
-        <img class="image-box" src="assets/desktop-man.svg" />
-        <h3>Aulas Online</h3>
         <p class="box-text">
-          As aulas on-line acontecem por
+          <span class="quotes">“</span>As aulas on-line acontecem por
           meio da plataforma Zoom. Após o
           cadastro gratuito que o aluno fará
-          com o nosso auxilio.
+          com o nosso auxilio."
         </p>
+        <p class="customer-name">Victor Machado</p>
       </div>
       <div class="cursos-box box-2">
-        <img class="image-box" src="assets/deal.svg" />
-        <h3>Aulas para Empresas</h3>
         <p class="box-text">
-          As aulas on-line acontecem por
+          "As aulas on-line acontecem por
           meio da plataforma Zoom. Após o
           cadastro gratuito que o aluno fará
-          com o nosso auxilio.
+          com o nosso auxilio."
         </p>
+                <p class="customer-name">Victor Machado</p>
+
       </div>
       <div class="cursos-box box-3">
-        <img class="image-box" src="assets/learning.svg" />
-        <h3>Outros</h3>
         <p class="box-text">
-          As aulas on-line acontecem por
+          "As aulas on-line acontecem por
           meio da plataforma Zoom. Após o
           cadastro gratuito que o aluno fará
-          com o nosso auxilio.
+          com o nosso auxilio."
         </p>
+                <p class="customer-name">Victor Machado</p>
+
       </div>
     </div>
   </div>
@@ -64,7 +63,16 @@ h2 {
   width: 80%;
   height: 24vh;
 }
+.customer-name{
+  font-style: italic;
+    text-align: right;
+}
+.customer-name::before{
+  content: "– "
+}
+.quotes{
 
+}
 h3 {
   text-align: center;
   padding-top: 5%;
@@ -78,7 +86,7 @@ h3 {
   padding: 7%;
   border-radius: 4%;
   padding-top: 7%;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 

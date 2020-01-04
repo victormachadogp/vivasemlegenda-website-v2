@@ -5,6 +5,7 @@
     <BannerPrincipal />
     <CursosSection />
     <ActionCall />
+    <Testimonials/>
     <Contact />
     <TheFooter />
   </div>
@@ -18,6 +19,7 @@ import CursosSection from "@/components/CursosSection.vue";
 import ActionCall from "@/components/ActionCall.vue";
 import Contact from "@/components/Contact.vue";
 import TheFooter from "@/components/TheFooter.vue";
+import Testimonials from "@/components/Testimonials.vue";
 
 export default {
   components: {
@@ -26,8 +28,9 @@ export default {
     BannerPrincipal,
     CursosSection,
     ActionCall,
+    Testimonials,
     Contact,
-    TheFooter
+    TheFooter,
   }
 };
 </script>

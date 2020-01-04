@@ -43,6 +43,8 @@ button {
 }
 
 .btn {
+  font-size: 0.9em;
+  letter-spacing: 1px;
   align-items: center;
   border-radius: 4px;
   display: inline-flex;

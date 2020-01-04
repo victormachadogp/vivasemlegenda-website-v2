@@ -11,13 +11,13 @@
       </div>
       <div class="box-2">
         <div class="nav-link">
-          <a>HOME</a>
+          <router-link to="/">HOME</router-link>
         </div>
         <div class="nav-link">
-          <a>CURSOS</a>
+          <router-link to="/cursos">CURSOS</router-link>
         </div>
         <div class="nav-link">
-          <a>MATRÍCULA</a>
+          <router-link to="/matricula">MATRÍCULA</router-link>
         </div>
       </div>
     </nav>
@@ -60,7 +60,7 @@ nav {
 
 .box-2 {
   display: flex;
-  color: white;
+  color: white !important;
   margin: 1.5%;
 }
 

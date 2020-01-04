@@ -1,9 +1,15 @@
 <template>
   <div class="footer">
     <div class="site-tree">
-      <span class="site-tree-element">Página Inicial</span>
-      <span class="site-tree-element">Cursos</span>
-      <span class="site-tree-element">Matrícula</span>
+      <router-link
+        tag="span"
+        to="/" class="site-tree-element">Página Inicial</router-link>
+      <router-link
+        tag="span"
+        to="/cursos" class="site-tree-element">Cursos</router-link>
+      <router-link
+        tag="span"
+        to="/matricula" class="site-tree-element">Matrícula</router-link>
     </div>
     <div class="logo-wrapper">
       <router-link
@@ -57,6 +63,7 @@ export default {};
 
 .site-tree-element {
   margin: 0.25rem 0;
+  cursor: pointer;
 }
 
 .developed-by {

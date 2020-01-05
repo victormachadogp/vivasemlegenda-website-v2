@@ -17,7 +17,7 @@
             diferentes!
           </span>
         </p>
-        <BaseButton>Agende uma aula experiemental</BaseButton>
+        <BaseButton>Agende uma aula experimental</BaseButton>
       </div>
 
       <div id="circle-left"></div>

@@ -49,6 +49,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
+  align-content: space-between;
 }
 .banner-content {
   flex: 75%;
@@ -57,7 +58,7 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
-.content-wrapper{
+.content-wrapper {
   align-self: center;
 }
 .content-text {

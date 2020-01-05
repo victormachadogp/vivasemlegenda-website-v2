@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheNavBar />
+    <TheNavBar always-show/>
     <!-- <div class="content">content here</div> -->
     <div class="grid">
       <h1>Cursos</h1>

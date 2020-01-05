@@ -26,6 +26,12 @@
 
 <script>
 export default {
+  props: {
+    alwaysShow: {
+      type: Boolean,
+      default: false
+    },
+  },
   data() {
     return {
       showNavBar: false
@@ -34,7 +40,7 @@ export default {
   methods: {
     handleScroll() {
       // Any code to be executed when the window is scrolled
-      if (window.scrollY > 350) this.showNavBar = true;
+      if (window.scrollY > 350 || this.alwaysShow) this.showNavBar = true;
       else this.showNavBar = false;
     }
   },

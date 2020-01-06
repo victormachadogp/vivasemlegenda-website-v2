@@ -11,9 +11,9 @@
       <div class="content">
         <h1>A MELHOR ESCOLHA PARA AS MELHORES PESSOAS!</h1>
         <p class="hero-summary">
-          Professores particulares, aulas online ou para empresas e
+          Professores particulares, aulas online ou para empresas
           <span class="highlight">
-            7 idiomas
+            em 7 idiomas
             diferentes!
           </span>
         </p>
@@ -145,11 +145,7 @@ export default {
   transform: scale(1.1);
 }
 
-.highlight {
-  background-color: #fbb03b;
-  color: white;
-  padding: 2px 0.35rem;
-}
+
 /* .image-cover {
   width: 100%;
   z-index: -10;

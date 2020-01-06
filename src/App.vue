@@ -7,6 +7,11 @@
 <style lang="scss">
 body {
 }
+.highlight {
+  background-color: #fbb03b;
+  color: white;
+  padding: 2px 0.35rem;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

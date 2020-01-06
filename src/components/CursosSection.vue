@@ -4,32 +4,27 @@
     <div class="grid-box">
       <div class="cursos-box box-1">
         <img class="image-box" src="assets/desktop-man.svg" />
-        <h3>Aulas Online</h3>
+        <h3>Aulas online</h3>
         <p class="box-text">
-          As aulas on-line acontecem por
-          meio da plataforma Zoom. Após o
-          cadastro gratuito que o aluno fará
-          com o nosso auxilio.
+          As aulas on-line acontecem através da plataforma Zoom. O
+          cadastro é simples e gratuito e nós iremos ajudá-lo a configurar sua sala de aula virtual.
         </p>
       </div>
       <div class="cursos-box box-2">
-        <img class="image-box" src="assets/deal.svg" />
-        <h3>Aulas para Empresas</h3>
+        <img class="image-box" src="assets/for-companies.svg" />
+        <h3>Aulas para empresas</h3>
         <p class="box-text">
-          As aulas on-line acontecem por
-          meio da plataforma Zoom. Após o
-          cadastro gratuito que o aluno fará
-          com o nosso auxilio.
+          Nosso objetivo é ajudar os colaboradores da sua empresa a obter um
+          segundo idioma como parte de seu desenvolvimento profissional visando uma alta qualidade
+          profissional para sua empresa.
         </p>
       </div>
       <div class="cursos-box box-3">
-        <img class="image-box" src="assets/learning.svg" />
-        <h3>Outros</h3>
+        <img class="image-box" src="assets/sobdemanda.svg" />
+        <h3>Aulas on-demand</h3>
         <p class="box-text">
-          As aulas on-line acontecem por
-          meio da plataforma Zoom. Após o
-          cadastro gratuito que o aluno fará
-          com o nosso auxilio.
+          Nesta modalidade você poderá contratar uma aula no dia e
+          horário que você desejar para tratar do assunto que quiser.
         </p>
       </div>
     </div>

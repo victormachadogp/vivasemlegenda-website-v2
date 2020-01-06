@@ -35,7 +35,7 @@
               name="endereco"
               type="text"
               class="form-control"
-              placeholder="1234 Rua das Flores"
+              placeholder="Rua das Flores, 123..."
             />
           </div>
 
@@ -78,11 +78,29 @@
               />
             </div>
           </div>
+          <div class="form-row">
+            <div class="class-classes col-md-12">
+              <span>Idioma</span>
+              <span></span>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputState">Selecione o idioma:</label>
+              <select name="idioma" class="form-control">
+                <option>Inglês</option>
+                <option>Francês</option>
+                <option>Espanhol</option>
+                <option>Árabe</option>
+                <option>Coreano</option>
+                <option>Português (estrangeiros)</option>
+                <option selected>Escolher...</option>
+              </select>
+            </div>
+          </div>
           <!-- Form 2 -->
           <div v-for="(item,index) in classes" :key="index" class="form-row">
             <div class="class-classes col-md-12">
               <span>Aula {{index+1}}</span>
-              <span v-if="index > 1" @click="removeClass(index)" class="morethen">[x] Remover</span>
+              <span v-if="index > 1" @click="removeClass(index)" class="morethen remove">[x] Remover</span>
             </div>
             <div class="form-group col-md-6">
               <label for="inputState">
@@ -90,11 +108,11 @@
                 <strong>Dia</strong> da aula:
               </label>
               <select name="dia" class="form-control">
-                <option selected>Segunda-Feira</option>
-                <option selected>Terça-Feira</option>
-                <option selected>Quarta-Feira</option>
-                <option selected>Quinta-Feira</option>
-                <option selected>Sexta-Feira</option>
+                <option>Segunda-Feira</option>
+                <option>Terça-Feira</option>
+                <option>Quarta-Feira</option>
+                <option>Quinta-Feira</option>
+                <option>Sexta-Feira</option>
                 <option selected>Escolher...</option>
               </select>
             </div>
@@ -104,9 +122,9 @@
                 <strong>Período</strong> da aula:
               </label>
               <select name="dia" class="form-control">
-                <option selected>Manhã</option>
-                <option selected>Tarde</option>
-                <option selected>Noite</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
                 <option selected>Escolher...</option>
               </select>
             </div>
@@ -177,8 +195,6 @@ export default {
           response.text = "Formulário enviado com sucesso!";
           response.status = 200;
         } else {
-          console.log(xhr);
-
           response.text =
             "Erro no envio do formulário. Favor entrar em contato por telefone ou e-mail.";
           response.status = xhr.status;
@@ -253,6 +269,9 @@ h1 {
   color: rgb(74, 74, 218);
   cursor: pointer;
 }
+.remove {
+  font-weight: normal;
+}
 
 .honeypot-field {
   display: none;
@@ -274,6 +293,8 @@ h1 {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
+  padding: 0.3rem 1rem;
+  font-weight: bold;
 }
 
 .morethen {

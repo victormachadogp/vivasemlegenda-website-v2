@@ -79,5 +79,6 @@ nav {
 .nav-logo {
   width: 50%;
   margin: 3%;
+  cursor: pointer;
 }
 </style>

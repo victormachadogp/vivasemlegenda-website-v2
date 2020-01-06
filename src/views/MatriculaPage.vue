@@ -131,16 +131,6 @@
           </div>
           <p @click="addMoreClasses()" class="morethen">+ Adicionar mais uma aula</p>
 
-          <!-- Field Against Bots -->
-          <fieldset class="pure-group honeypot-field">
-            <label for="honeypot">
-              To help avoid spam, utilize a Honeypot technique with a hidden
-              text field; must be empty to submit the form! Otherwise, we assume
-              the user is a spam bot.
-            </label>
-            <input id="honeypot" type="text" name="honeypot" value />
-          </fieldset>
-
           <button
             type="submit"
             class="button-success pure-button button-xlarge btn btn-primary btn-lg"

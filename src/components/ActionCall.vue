@@ -2,7 +2,7 @@
     <div class="grid-container">
         <div class="text">
             <h4>COMECE HOJE!</h4> 
-            <p class="paragraph">Nosso objetivo é que você consiga se comunicar em todos os contextos, com isso em mente, nossas aulas aulas são preparadas com situações reais do dia a dia para que você não trave na hora de comunicar no mundo a fora. </p>
+            <p class="paragraph">Nosso objetivo é que você consiga se comunicar em todos os contextos, com isso em mente, nossas aulas são preparadas com situações reais do dia a dia para que você não trave na hora de comunicar no mundo a fora. </p>
         </div>
 
         <div>

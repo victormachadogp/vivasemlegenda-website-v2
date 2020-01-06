@@ -1,5 +1,5 @@
 <template>
-  <button class="btn" :class="{ white: light }">
+  <button @click="$emit('click')" class="btn" :class="{ white: light }">
     <slot>{{text}}</slot>
   </button>
 </template>

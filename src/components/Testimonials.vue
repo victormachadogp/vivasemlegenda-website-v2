@@ -18,8 +18,7 @@
           cadastro gratuito que o aluno fará
           com o nosso auxilio."
         </p>
-                <p class="customer-name">Victor Machado</p>
-
+        <p class="customer-name">Victor Machado</p>
       </div>
       <div class="cursos-box box-3">
         <p class="box-text">
@@ -28,8 +27,7 @@
           cadastro gratuito que o aluno fará
           com o nosso auxilio."
         </p>
-                <p class="customer-name">Victor Machado</p>
-
+        <p class="customer-name">Victor Machado</p>
       </div>
     </div>
   </div>
@@ -50,7 +48,7 @@ h2 {
   padding-top: 4rem;
   padding-bottom: 2rem;
   font-size: 2.3rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .grid-box {
@@ -63,15 +61,15 @@ h2 {
   width: 80%;
   height: 24vh;
 }
-.customer-name{
+.customer-name {
+  margin-top: 1rem;
   font-style: italic;
-    text-align: right;
+  text-align: right;
 }
-.customer-name::before{
-  content: "– "
+.customer-name::before {
+  content: "– ";
 }
-.quotes{
-
+.quotes {
 }
 h3 {
   text-align: center;

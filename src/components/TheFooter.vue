@@ -26,7 +26,7 @@
       <p>contato@vivasemlegenda.com.br</p>
       <p>(13) 99792-8404</p>
     </div>
-    <div class="developed-by">Developed by xxxx</div>
+    <!-- <div class="developed-by">Developed by xxxx</div> -->
   </div>
 </template>
 
@@ -46,7 +46,7 @@ export default {};
   padding: 1.5rem;
 }
 .logo {
-  max-width: 225px;
+  max-width: 200px;
   cursor: pointer;
 }
 .contact > .title {

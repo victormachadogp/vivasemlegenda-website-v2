@@ -51,7 +51,7 @@ h2 {
   padding-top: 4rem;
   padding-bottom: 2rem;
   font-size: 2.3rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .grid-box {

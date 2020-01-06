@@ -17,7 +17,7 @@
             diferentes!
           </span>
         </p>
-        <BaseButton>Agende uma aula experimental</BaseButton>
+        <BaseButton @click="scrollTo('contato')">Agende uma aula experimental</BaseButton>
       </div>
 
       <div id="circle-left"></div>
@@ -31,6 +31,13 @@ import BaseButton from "@/components/BaseButton.vue";
 export default {
   components: {
     BaseButton
+  },
+  methods: {
+    scrollTo(refName) {
+      console.log(refName);
+      
+      window.location.href="/#contato"
+    }
   }
 };
 </script>
@@ -41,7 +48,7 @@ export default {
   position: relative;
   /* background-color: aquamarine; */
   display: flex;
-  height: 100vh;
+  min-height: 90vh;
   overflow: hidden;
 }
 
@@ -51,12 +58,12 @@ export default {
   flex-direction: row;
 
   align-self: center;
-  margin: 5rem 5vw 0 5vw;
+  margin: 10rem 5vw 0 5vw;
 }
 #logo {
   position: absolute;
   width: 25vw;
-  max-width: 220px;
+  max-width: 200px;
   margin: 1.5rem;
 }
 .logo-container {
@@ -152,7 +159,7 @@ export default {
 
 h1 {
   color: #707070;
-  font-weight: 100;
+  font-weight: 500;
   max-width: 28rem;
 }
 

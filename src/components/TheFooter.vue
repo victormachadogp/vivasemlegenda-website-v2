@@ -1,32 +1,20 @@
 <template>
   <div class="footer">
     <div class="site-tree">
-      <router-link
-        tag="span"
-        to="/" class="site-tree-element">Página Inicial</router-link>
-      <router-link
-        tag="span"
-        to="/cursos" class="site-tree-element">Cursos</router-link>
-      <router-link
-        tag="span"
-        to="/matricula" class="site-tree-element">Matrícula</router-link>
+      <router-link tag="span" to="/" class="site-tree-element">Página Inicial</router-link>
+      <router-link tag="span" to="/cursos" class="site-tree-element">Cursos</router-link>
+      <router-link tag="span" to="/matricula" class="site-tree-element">Matrícula</router-link>
     </div>
     <div class="logo-wrapper">
-      <router-link
-        tag="img"
-        to="/"
-        class="logo"
-        src="assets/logo-light.svg"
-        alt
-      />
+      <router-link tag="img" to="/" class="logo" src="assets/logo-light.svg" alt />
     </div>
 
     <div class="contact">
-      <div class="title">CONTACT</div>
+      <div class="title">CONTATO</div>
       <p>contato@vivasemlegenda.com.br</p>
       <p>(13) 99792-8404</p>
     </div>
-    <div class="developed-by">Developed by xxxx</div>
+    <!-- <div class="developed-by">Developed by xxxx</div> -->
   </div>
 </template>
 
@@ -43,16 +31,24 @@ export default {};
   color: #ffffff;
   min-height: 120px;
   align-content: center;
-  padding: 1.5rem;
+  padding: 1.5rem 10%;
+}
+.logo-wrapper {
+  flex: 1;
 }
 .logo {
-  max-width: 225px;
+  max-width: 200px;
   cursor: pointer;
 }
+
+.contact {
+  flex: 1;
+}
 .contact > .title {
-  font-weight: bold;
+  font-weight: 500;
 }
 .site-tree {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -94,10 +90,7 @@ export default {};
   .logo-wrapper {
     order: -1;
     padding-top: 0 !important;
+    width: 100%;
   }
-}
-
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  /* portrait phones */
 }
 </style>

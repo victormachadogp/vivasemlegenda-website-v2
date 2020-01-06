@@ -37,6 +37,7 @@
 
 h4 {
     font-size: 1.8rem;
+    font-weight: 500;
     padding-bottom: 2%;
 }
 .desk-man {

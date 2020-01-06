@@ -41,14 +41,13 @@ export default {
 <style scoped>
 .main-banner {
   display: flex;
-  margin: 1rem;
-  margin-bottom: 0;
+  margin: 2rem;
 }
 .languages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2rem;
+  
   align-content: space-between;
 }
 .banner-content {
@@ -90,11 +89,13 @@ export default {
   padding-left: 2%;
   margin: 2%;
   justify-content: center;
+  
 }
 
 .flag-container {
-  padding-left: 3%;
-  padding-right: 3%;
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .country-title {

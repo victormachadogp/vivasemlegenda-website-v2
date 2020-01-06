@@ -5,7 +5,7 @@
     <div class="grid">
       <h1>Cursos</h1>
       <div>
-        <img class="image-top" src="assets/desktop-man.svg" />
+        <img class="image-top" src="assets/reading.svg" />
       </div>
     </div>
     <div class="background">
@@ -34,7 +34,7 @@
 
           <p>Então você precisa conhecer a aula on-demand da Viva Sem Legenda. Nesse método você contrata uma aula no dia e horário que você desejar para tratar do assunto que você quiser. Estude on-demand e Viva Sem Legenda.</p>
         </div>
-        <img class="image-box" src="assets/contact-us.svg" />
+        <img class="image-box" src="assets/sobdemanda.svg" />
       </div>
     </div>
     <TheFooter />

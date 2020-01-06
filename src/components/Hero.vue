@@ -34,9 +34,7 @@ export default {
   },
   methods: {
     scrollTo(refName) {
-      console.log(refName);
-      
-      window.location.href="/#contato"
+      window.location.href = "/#" + refName;
     }
   }
 };

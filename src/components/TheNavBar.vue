@@ -1,22 +1,20 @@
 <template>
-  <div v-show="showNavBar">
-    <nav>
-      <div class="box">
-        <router-link tag="img" to="/" class="nav-logo" src="assets/logo-light.svg" />
+  <nav v-show="showNavBar">
+    <div class="box">
+      <router-link tag="img" to="/" class="nav-logo" src="assets/logo-light.svg" />
+    </div>
+    <div class="box-2">
+      <div class="nav-link">
+        <router-link to="/">HOME</router-link>
       </div>
-      <div class="box-2">
-        <div class="nav-link">
-          <router-link to="/">HOME</router-link>
-        </div>
-        <div class="nav-link">
-          <router-link to="/cursos">CURSOS</router-link>
-        </div>
-        <div class="nav-link">
-          <router-link to="/matricula">MATRÍCULA</router-link>
-        </div>
+      <div class="nav-link">
+        <router-link to="/cursos">CURSOS</router-link>
       </div>
-    </nav>
-  </div>
+      <div class="nav-link">
+        <router-link to="/matricula">MATRÍCULA</router-link>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -57,6 +55,7 @@ nav {
   align-items: center;
   position: fixed;
   z-index: 10;
+  min-height: 3rem;
 }
 
 .box-2 {

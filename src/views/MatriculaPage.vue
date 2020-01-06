@@ -107,7 +107,7 @@
                 Selecione o
                 <strong>Dia</strong> da aula:
               </label>
-              <select name="dia" class="form-control">
+              <select :name="'dia-'+ (index+1)" class="form-control">
                 <option>Segunda-Feira</option>
                 <option>Terça-Feira</option>
                 <option>Quarta-Feira</option>
@@ -210,8 +210,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-}
 
 .grid {
   display: grid;

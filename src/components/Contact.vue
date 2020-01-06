@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     sendForm() {
-      const action = "https://formspree.io/xpzqqakq";
+      const action = "https://formspree.io/moqjoeze";
 
       const form = this.$refs.contactForm;
       const data = new FormData(form);

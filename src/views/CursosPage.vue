@@ -19,7 +19,7 @@
       </div>
 
       <div class="cursos-box middle-box">
-        <img class="image-box" src="assets/deal.svg" />
+        <img class="image-box" src="assets/for-companies.svg" />
         <div class="flex">
           <h2>Aulas para Empresas</h2>
           <p>A Viva Sem Legenda tem como objetivo ajudar os colaboradores da sua empresa a obter um segundo idioma como parte do seu desenvolvimento profissional visando uma alta qualidade profissional para sua empresa. Essas aulas podem acontecer on-line ou dentro da sua própria empresa para grupos de até seis pessoas.</p>

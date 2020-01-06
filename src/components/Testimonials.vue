@@ -4,30 +4,21 @@
     <div class="grid-box">
       <div class="cursos-box box-1">
         <p class="box-text">
-          <span class="quotes">“</span>As aulas on-line acontecem por
-          meio da plataforma Zoom. Após o
-          cadastro gratuito que o aluno fará
-          com o nosso auxilio."
+          <span class="quotes">“</span>Os professores da Viva Sem Legenda são muito dedicados e atenciosos, tem paixão por ensinar e isso torna meu aprendizado mais leve e divertido."
         </p>
-        <p class="customer-name">Victor Machado</p>
+        <!-- <p class="customer-name">Victor Machado</p> -->
       </div>
       <div class="cursos-box box-2">
-        <p class="box-text">
-          "As aulas on-line acontecem por
-          meio da plataforma Zoom. Após o
-          cadastro gratuito que o aluno fará
-          com o nosso auxilio."
-        </p>
-        <p class="customer-name">Victor Machado</p>
+        <p
+          class="box-text"
+        >"Estudar Árabe na Viva Sem Legenda tem me ajudado a alcançar meus objetivos. Eu imaginava que Árabe era muito mais difícil mas o método Viva Sem Legenda deixou tudo mais fácil."</p>
+        <!-- <p class="customer-name">Aluno de Árabe</p> -->
       </div>
       <div class="cursos-box box-3">
-        <p class="box-text">
-          "As aulas on-line acontecem por
-          meio da plataforma Zoom. Após o
-          cadastro gratuito que o aluno fará
-          com o nosso auxilio."
-        </p>
-        <p class="customer-name">Victor Machado</p>
+        <p
+          class="box-text"
+        >"Eu não imaginava que ia conseguir falar Inglês tão bem e em tão pouco tempo. Meu problema era falta de tempo mas estudar Inglês on-line com a Viva Sem Legenda resolveu tudo pra mim."</p>
+        <!-- <p class="customer-name">Victor Machado</p> -->
       </div>
     </div>
   </div>

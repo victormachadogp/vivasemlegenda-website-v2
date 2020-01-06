@@ -4,8 +4,8 @@
       <div class="content-wrapper">
         <p
           class="content-text"
-        >Quer entender por que a Viva Sem Legenda é a melhor escolha para as melhores pessoas?</p>
-        <p class="content-text">Agende sua aula experimental e comece a viver sem legenda já!</p>
+        >Com a Viva Sem Legenda você pode aprender até 7 idiomas onde quer que esteja, seja em casa ou no horário de almoço do seu trabalho, você vai aprender o idioma que desejar com conforto e dedicação total do seu professor.</p>
+        <!-- <p class="content-text"></p> -->
       </div>
       <div class="languages">
         <div v-for="(item, index) in flags" :key="index" class="us flag-container">
@@ -47,11 +47,11 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
   align-content: space-between;
 }
 .banner-content {
-  flex: 75%;
+  flex: 80%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -63,9 +63,10 @@ export default {
 .content-text {
   font-size: 1.2rem;
   text-align: left;
+  margin-bottom: 0;
 }
 .banner-art {
-  flex: 25%;
+  flex: 20%;
   position: relative;
   height: 300px;
 }
@@ -89,7 +90,6 @@ export default {
   padding-left: 2%;
   margin: 2%;
   justify-content: center;
-  
 }
 
 .flag-container {

@@ -74,14 +74,13 @@ h1 {
   width: 100%;
   position: relative;
   top: 10%;
-  z-index: 100;
 }
 
 .background {
     background-image: linear-gradient(to right, #0095f5, #0095f5, #50bafe);
     padding-top: 3%;
     padding-bottom: 3%;
-    z-index: -1;
+    
 }
 
 .cursos-box {

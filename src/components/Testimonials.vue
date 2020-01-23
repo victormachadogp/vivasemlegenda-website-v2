@@ -100,7 +100,7 @@ h3 {
     padding: 7%;
     border-radius: 4%;
     padding-top: 7%;
-    padding-bottom: 12%;
+    padding-bottom: 7%;
   }
 
   h2 {

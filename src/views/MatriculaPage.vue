@@ -331,6 +331,7 @@ h1 {
   .grid {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding-top: 15%;
   }
 
   h1 {
@@ -340,6 +341,12 @@ h1 {
 
   .image-top {
     display: none;
+  }
+
+  .form {
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 </style>

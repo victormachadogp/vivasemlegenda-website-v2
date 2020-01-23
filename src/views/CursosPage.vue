@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="background">
-      <div class="cursos-box">
+      <div class="cursos-box first-box">
         <div class="flex">
           <h2>Aulas Online</h2>
           <p>Por meio da plataforma Zoom você pode aprender Inglês, Espanhol, Francês, Mandarim, Coreano, Árabe e Português para estrangeiros. Após o cadastro gratuito na plataforma Zoom com o nosso auxilio, é só agendar sua próxima aula e mãos à obra.</p>
@@ -133,6 +133,48 @@ p {
   justify-self: center;
   margin: 4%;
 }
+
+.grid {
+  padding-top: 15%;
+}
+
+h1 {
+  margin: 15px;
+  margin-bottom: 10px !important;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.flex {
+  padding: 15px;
+}
+
+.image-box {
+  margin: 5%;
+}
+
+.cursos-box {
+  margin-bottom: 40px;
+}
+
+.first-box {
+  margin-top: 40px;
+}
  
+}
+
+@media (max-width: 600px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .image-top {
+    display: none;
+  }
 }
 </style>

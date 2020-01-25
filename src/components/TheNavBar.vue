@@ -204,7 +204,9 @@ nav {
 }
 
 .side-nav a:hover{
-  color:#fff;
+  color:#0095f5;
+  background-color: white;
+  transition-duration: 0.5s;
 }
 
 .side-nav .btn-close{
@@ -217,9 +219,8 @@ nav {
 
 .btn-close {
   color: white;
-}
-
-  
+  cursor: pointer;
+}  
 
 }
 </style>

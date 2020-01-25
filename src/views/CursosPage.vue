@@ -8,7 +8,7 @@
         <img class="image-top" src="assets/reading.svg" />
       </div>
     </div>
-    <div class="background">
+    <div v-on:scroll.passive="handleScroll" class="background" id="that">
       <div class="cursos-box first-box">
         <div class="flex">
           <h2>Aulas Online</h2>
@@ -48,11 +48,42 @@ export default {
   components: {
     TheNavBar,
     TheFooter
-  }
+  },
+
+//   data () {
+//   return {
+//     scrolled: false
+//   };
+// },
+  
+  // methods: {
+
+  //   handleScroll() {
+  //     // Any code to be executed when the window is scrolled
+  //     if (window.scrollY > 600) {
+  //         var getThis = document.getElementById("that");
+  //         getThis.style.backgroundColor = "red";
+  //     }
+  //     return window.scrollY > 100
+  //   }
+  // },
+  
+  // created() {
+  //   window.addEventListener("scroll", this.handleScroll);
+  // },
+  // destroyed() {
+  //   window.removeEventListener("scroll", this.handleScroll);
+  // }
 };
 </script>
 
 <style lang="scss" scoped>
+
+.test-animation {
+  background-color: red;
+  color: blue;
+}
+
 .content {
   height: 600px ;
 }
@@ -66,7 +97,7 @@ export default {
 h1 {
   font-size: 4rem;
   align-self: center;
-  font-weight: 600;
+  font-weight: 400;
 
 }
 
@@ -128,7 +159,8 @@ p {
 }
 
 .image-box {
-  width: 40%;
+  width: 80%;
+  height: 24vh;
   align-self: center;
   justify-self: center;
   margin: 4%;

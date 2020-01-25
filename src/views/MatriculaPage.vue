@@ -220,7 +220,7 @@ export default {
 h1 {
   font-size: 4rem;
   align-self: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .image-top {

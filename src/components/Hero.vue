@@ -69,7 +69,7 @@ export default {
   position: relative;
 }
 .content {
-  padding-left: 7.5vw;
+  padding-left: 2vw;
   flex: 50%;
   text-align: left;
   align-self: center;

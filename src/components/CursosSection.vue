@@ -91,7 +91,7 @@ h3 {
   .grid-box {
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: 3%;
+    padding-bottom: 3rem;
   }
 
   .cursos-box {
@@ -103,7 +103,7 @@ h3 {
   }
 
   h2 {
-    padding-top: 5%;
+    padding-top: 3rem;
   }
 }
 </style>

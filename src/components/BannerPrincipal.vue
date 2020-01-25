@@ -109,9 +109,9 @@ export default {
 }
 
 .button-float {
-  width: 60px;
-  height: 60px;
-  background-image: linear-gradient(to right, #0095f5, #0095f5, #50bafe);
+  width: 50px;
+  height: 50px;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,14 +119,14 @@ export default {
   border-radius: 50%;
   color: white;
   font-size: 40px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
   position: fixed; 
   right: 20px;
   bottom: 20px;
 }
 
 #whatsapp-logo {
-  fill: white;
+  fill: #4FCE5D;
   width: 32px;
   height: 32px  ;
 }

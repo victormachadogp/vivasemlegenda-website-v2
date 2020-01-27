@@ -1,20 +1,20 @@
 <template>
   <div class="cursos-container">
     <h2>DEPOIMENTOS</h2>
-    <div class="grid-box">
-      <div class="cursos-box box-1">
+    <div v-on:scroll="handleScrollTwo" class="grid-box">
+      <div id="animationOne" class="cursos-box box-1">
         <p class="box-text">
           <span class="quotes">“</span>Os professores da Viva Sem Legenda são muito dedicados e atenciosos, tem paixão por ensinar e isso torna meu aprendizado mais leve e divertido."
         </p>
         <!-- <p class="customer-name">Victor Machado</p> -->
       </div>
-      <div class="cursos-box box-2">
+      <div id="animationTwo" class="cursos-box box-2">
         <p
           class="box-text"
         >"Estudar Árabe na Viva Sem Legenda tem me ajudado a alcançar meus objetivos. Eu imaginava que Árabe era muito mais difícil mas o método Viva Sem Legenda deixou tudo mais fácil."</p>
         <!-- <p class="customer-name">Aluno de Árabe</p> -->
       </div>
-      <div class="cursos-box box-3">
+      <div id="animationThree" class="cursos-box box-3">
         <p
           class="box-text"
         >"Eu não imaginava que ia conseguir falar Inglês tão bem e em tão pouco tempo. Meu problema era falta de tempo mas estudar Inglês on-line com a Viva Sem Legenda resolveu tudo pra mim."</p>
@@ -25,10 +25,31 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+  methods: {
+
+    handleScrollTwo() {
+      // Any code to be executed when the window is scrolled
+      if (window.scrollY > 1400) {
+        document.getElementById('animationOne').classList.add('test-animation')
+        document.getElementById('animationTwo').classList.add('test-animation')
+        document.getElementById('animationThree').classList.add('test-animation')
+      }
+    }
+  },
+  
+  created() {
+    window.addEventListener("scroll", this.handleScrollTwo);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScrollTwo);
+  }
+};
 </script>
 
 <style scoped>
+
 .cursos-container {
   background-image: linear-gradient(to right, #0095f5, #0095f5, #50bafe);
 }
@@ -106,5 +127,24 @@ h3 {
   h2 {
     padding-top: 3rem;
   }
+}
+
+@media (min-width: 851px) {
+  
+  .test-animation {
+  animation-name: example;
+  animation-duration: 2s;
+  position: relative;
+
+}
+
+@keyframes example {
+  0%   {left:0px; top:200px; transition-timing-function: ease-in-out;
+}
+
+  100% {left:0px; top:0px; transition-timing-function: ease-in-out;
+}
+}
+
 }
 </style>

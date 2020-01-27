@@ -1,8 +1,8 @@
 <template>
   <div class="cursos-container">
     <h2>CURSOS</h2>
-    <div class="grid-box">
-      <div class="cursos-box box-1">
+    <div v-on:scroll="handleScroll" class="grid-box">
+      <div id="animateOne" class="cursos-box box-1">
         <img class="image-box" src="assets/desktop-man.svg" />
         <h3>Aulas online</h3>
         <p class="box-text">
@@ -10,7 +10,7 @@
           cadastro é simples e gratuito e nós iremos ajudá-lo a configurar sua sala de aula virtual.
         </p>
       </div>
-      <div class="cursos-box box-2">
+      <div id="animateTwo" class="cursos-box box-2">
         <img class="image-box" src="assets/for-companies.svg" />
         <h3>Aulas para empresas</h3>
         <p class="box-text">
@@ -19,7 +19,7 @@
           profissional para sua empresa.
         </p>
       </div>
-      <div class="cursos-box box-3">
+      <div id="animateThree" class="cursos-box box-3">
         <img class="image-box" src="assets/sobdemanda.svg" />
         <h3>Aulas on-demand</h3>
         <p class="box-text">
@@ -32,10 +32,31 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+  methods: {
+
+    handleScroll() {
+      // Any code to be executed when the window is scrolled
+      if (window.scrollY > 300) {
+        document.getElementById('animateOne').classList.add('test-animation')
+        document.getElementById('animateTwo').classList.add('test-animation')
+        document.getElementById('animateThree').classList.add('test-animation')
+      }
+    }
+  },  
+  
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+};
 </script>
 
 <style scoped>
+
 .cursos-container {
   background-image: linear-gradient(to right, #0095f5, #0095f5, #50bafe);
 }
@@ -105,5 +126,24 @@ h3 {
   h2 {
     padding-top: 3rem;
   }
+}
+
+@media (min-width: 851px) {
+
+  .test-animation {
+  animation-name: example;
+  animation-duration: 2s;
+  position: relative;
+
+}
+
+@keyframes example {
+  0%   {left:0px; top:200px; transition-timing-function: ease-in-out;
+}
+
+  100% {left:0px; top:0px; transition-timing-function: ease-in-out;
+}
+}
+  
 }
 </style>

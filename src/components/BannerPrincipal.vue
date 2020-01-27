@@ -123,6 +123,7 @@ export default {
   position: fixed; 
   right: 20px;
   bottom: 20px;
+  z-index: 999;
 }
 
 #whatsapp-logo {

@@ -57,6 +57,7 @@ h4 {
 
     .desk-man {
     width: 70%;
+    margin-bottom: 3rem;
 }
 
 .text {
@@ -67,8 +68,9 @@ h4 {
 }
 
 h4 {
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 0px;
 }
 
 .paragraph {

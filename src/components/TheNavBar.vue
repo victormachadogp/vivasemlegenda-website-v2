@@ -132,6 +132,15 @@ nav {
 
 @media (max-width: 600px) {
 
+  .box {
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .nav-logo {
+    width: 28vw;
+  }
+
   .box-2 {
     display: none;
   }

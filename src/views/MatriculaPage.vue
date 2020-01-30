@@ -20,11 +20,11 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name">Nome</label>
-              <input id="name" name="name" type="text" class="form-control" placeholder="Nome" />
+              <input id="name" name="name" type="text" class="form-control" placeholder="Nome" required />
             </div>
             <div class="form-group col-md-6">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" class="form-control" placeholder="Email" />
+              <input id="email" name="email" type="email" class="form-control" placeholder="Email" required />
             </div>
           </div>
 
@@ -36,6 +36,7 @@
               type="text"
               class="form-control"
               placeholder="Rua das Flores, 123..."
+              required
             />
           </div>
 
@@ -85,14 +86,14 @@
             </div>
             <div class="form-group col-md-6">
               <label for="inputState">Selecione o idioma:</label>
-              <select name="idioma" class="form-control">
+              <select name="idioma" class="form-control" required>
                 <option>Inglês</option>
                 <option>Francês</option>
                 <option>Espanhol</option>
                 <option>Árabe</option>
                 <option>Coreano</option>
                 <option>Português (estrangeiros)</option>
-                <option selected>Escolher...</option>
+                <option selected disabled value="">Escolher...</option>
               </select>
             </div>
           </div>
@@ -107,13 +108,13 @@
                 Selecione o
                 <strong>Dia</strong> da aula:
               </label>
-              <select :name="'dia-'+ (index+1)" class="form-control">
+              <select :name="'dia-'+ (index+1)" class="form-control" required>
                 <option>Segunda-Feira</option>
                 <option>Terça-Feira</option>
                 <option>Quarta-Feira</option>
                 <option>Quinta-Feira</option>
                 <option>Sexta-Feira</option>
-                <option selected>Escolher...</option>
+                <option selected disabled value="">Escolher...</option>
               </select>
             </div>
             <div class="form-group col-md-6">
@@ -121,21 +122,16 @@
                 Selecione o
                 <strong>Período</strong> da aula:
               </label>
-              <select name="dia" class="form-control">
+              <select name="dia" class="form-control" required>
                 <option>Manhã</option>
                 <option>Tarde</option>
                 <option>Noite</option>
-                <option selected>Escolher...</option>
+                <option selected disabled value="">Escolher...</option>
               </select>
             </div>
           </div>
           <p @click="addMoreClasses()" class="morethen">+ Adicionar mais uma aula</p>
-
-          <button
-            type="submit"
-            class="button-success pure-button button-xlarge btn btn-primary btn-lg"
-            v-show="!loader"
-          >Enviar</button>
+      <BaseButton v-show="!loader" type="submit">ENVIAR</BaseButton>
           <div class="loader-wrapper col-md-12">
             <div v-if="loader" class="loader"></div>
           </div>
@@ -157,10 +153,13 @@
 <script>
 import TheNavBar from "@/components/TheNavBar.vue";
 import TheFooter from "@/components/TheFooter.vue";
+import BaseButton from "@/components/BaseButton.vue";
+
 export default {
   components: {
     TheNavBar,
-    TheFooter
+    TheFooter,
+    BaseButton
   },
   data() {
     return {

@@ -213,7 +213,7 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  // margin-top: 3%;
+  padding-top: 3rem;
 }
 
 h1 {

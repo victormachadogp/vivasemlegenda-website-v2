@@ -1,8 +1,5 @@
 <template>
   <nav v-show="showNavBar">
-    
-
-
     <div class="box">
       <router-link tag="img" to="/" class="nav-logo" src="assets/logo-light.svg" />
     </div>
@@ -18,13 +15,13 @@
       </div>
     </div>
 
-  <div class="nav-mobile">
+    <div class="nav-mobile">
       <span class="open-slide">
         <div v-on:click="openSlideMenu()">
           <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
           </svg>
         </div>
       </span>
@@ -32,12 +29,11 @@
 
     <!-- New Code -->
     <div id="side-menu" class="side-nav">
-    <div class="btn-close" v-on:click="closeSlideMenu()">&times;</div>
+      <div class="btn-close" v-on:click="closeSlideMenu()">&times;</div>
       <router-link to="/">Home</router-link>
       <router-link to="/cursos">Cursos</router-link>
       <router-link to="/matricula">Matrícula</router-link>
-  </div>
-
+    </div>
   </nav>
 </template>
 
@@ -49,21 +45,23 @@ export default {
       default: false
     }
   },
+  beforeMount () {
+    if (this.alwaysShow) this.showNavBar = true;
+  },
   data() {
     return {
       showNavBar: false
     };
   },
   methods: {
-
-    openSlideMenu(){
-      document.getElementById('side-menu').style.width = '250px';
-      document.getElementById('main').style.marginLeft = '250px';
+    openSlideMenu() {
+      document.getElementById("side-menu").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
     },
 
-    closeSlideMenu(){
-      document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
+    closeSlideMenu() {
+      document.getElementById("side-menu").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
     },
 
     handleScroll() {
@@ -118,16 +116,13 @@ nav {
 }
 
 @media (min-width: 600px) {
-
-.nav-mobile {
+  .nav-mobile {
     display: none;
   }
 
   .side-nav {
     display: none;
   }
-
-
 }
 
 @media (max-width: 600px) {
@@ -150,86 +145,83 @@ nav {
     margin-top: 20px;
   }
 
-   nav {
-  width: 100%;
-  /* display: flex; */
-  justify-content: space-between;
-  align-items: center;
-  /* position: fixed; */
-  z-index: 10;
-  min-height: 3rem;
-}
+  nav {
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    z-index: 10;
+    min-height: 3rem;
+  }
 
-    .navbar{
-  overflow:hidden;
-  height:63px;
-}
+  .navbar {
+    overflow: hidden;
+    height: 63px;
+  }
 
-.navbar a{
-  /* float:left; */
-  display:block;
-  color:#f2f2f2;
-  text-align:center;
-  padding:14px 16px;
-  text-decoration:none;
-  font-size:17px;
-}
+  .navbar a {
+    /* float:left; */
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
-.navbar ul{
-  margin:8px 0 0 0;
-  list-style:none;
-}
+  .navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+  }
 
-.navbar a:hover{
-  background-color:#ddd;
-  color:#000;
-}
-
-  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: #000;
+  }
 
   /* New Code */
 
-  .side-nav{
-  height:100%;
-  width:0;
-  position:fixed;
-  z-index:1;
-  top:0;
-  right:0;
-  background-image: linear-gradient(to bottom, #0095f5, #0095f5, #50bafe);
-  opacity:0.9;
-  overflow-x:hidden;
-  padding-top:60px;
-  transition:0.5s;
-}
+  .side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, #0095f5, #0095f5, #50bafe);
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
 
-.side-nav a{
-  padding:10px 10px 10px 30px;
-  text-decoration:none;
-  font-size:22px;
-  color:white;
-  display:block;
-  transition:0.3s;
-}
+  .side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
 
-.side-nav a:hover{
-  color:#0095f5;
-  background-color: white;
-  transition-duration: 0.5s;
-}
+  .side-nav a:hover {
+    color: #0095f5;
+    background-color: white;
+    transition-duration: 0.5s;
+  }
 
-.side-nav .btn-close{
-  position:absolute;
-  top:0;
-  right:22px;
-  font-size:36px;
-  margin-left:50px;
-}
+  .side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 
-.btn-close {
-  color: white;
-  cursor: pointer;
-}  
-
+  .btn-close {
+    color: white;
+    cursor: pointer;
+  }
 }
 </style>

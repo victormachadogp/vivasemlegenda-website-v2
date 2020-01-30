@@ -33,7 +33,7 @@ button {
     #50bafe
   ) !important;
   border-color: #707070 !important;
-  height: 36px;
+  height: 42px;
   min-width: 64px;
   padding: 0 16px;
   background-color: transparent;

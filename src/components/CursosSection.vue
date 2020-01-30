@@ -1,8 +1,8 @@
 <template>
   <div class="cursos-container">
     <h2>CURSOS</h2>
-    <div v-on:scroll="handleScroll" class="grid-box">
-      <div id="animateOne" class="cursos-box box-1">
+    <div id="card-container" v-on:scroll="handleScroll" class="grid-box">
+      <div  class="cursos-box box-1">
         <img class="image-box" src="assets/desktop-man.svg" />
         <h3>Aulas online</h3>
         <p class="box-text">
@@ -10,7 +10,7 @@
           cadastro é simples e gratuito e nós iremos ajudá-lo a configurar sua sala de aula virtual.
         </p>
       </div>
-      <div id="animateTwo" class="cursos-box box-2">
+      <div class="cursos-box box-2">
         <img class="image-box" src="assets/for-companies.svg" />
         <h3>Aulas para empresas</h3>
         <p class="box-text">
@@ -39,9 +39,7 @@ export default {
     handleScroll() {
       // Any code to be executed when the window is scrolled
       if (window.scrollY > 300) {
-        document.getElementById('animateOne').classList.add('test-animation')
-        document.getElementById('animateTwo').classList.add('test-animation')
-        document.getElementById('animateThree').classList.add('test-animation')
+        document.getElementById('card-container').classList.add('animation')
       }
     }
   },  
@@ -130,18 +128,18 @@ h3 {
 
 @media (min-width: 851px) {
 
-  .test-animation {
-  animation-name: example;
-  animation-duration: 2s;
+  .animation {
+  animation-name: scrollup;
+  animation-duration: 1s;
   position: relative;
 
 }
 
-@keyframes example {
-  0%   {left:0px; top:200px; transition-timing-function: ease-in-out;
+@keyframes scrollup {
+  0%   {top:200px; transition-timing-function: ease-in-out;
 }
 
-  100% {left:0px; top:0px; transition-timing-function: ease-in-out;
+  100% {top:0px; transition-timing-function: ease-in-out;
 }
 }
   
